@@ -19,13 +19,15 @@ const App = () => {
     return (
       <div className="refresh">
         <h2>No Tours Left</h2>
-        <button onClick={handleRefresh}>Refresh </button>
+        <button className="btn-white" onClick={handleRefresh}>
+          Refresh{" "}
+        </button>
       </div>
     );
   }
 
   return (
-    <div>
+    <div className="App">
       <Tours tours={tours} handleRemove={handleRemove} />
     </div>
   );
